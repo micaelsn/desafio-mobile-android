@@ -1,7 +1,7 @@
 package com.marvel.app.domain.usecases
 
-import com.marvel.app.domain.repositories.CharactersRepository
+import com.marvel.app.domain.repositories.ICharactersRepository
 
-class CharactersUseCase(private val repository: CharactersRepository) {
-    fun getCharacter() = repository.getCharacters()
+class CharactersUseCase(private val repository: ICharactersRepository) {
+    suspend fun getCharacter() = repository.getCharacters()
 }
