@@ -1,4 +1,4 @@
-package com.marvel.app.data.external.api_retrofit
+package com.marvel.app.data.external.requests
 
 import com.marvel.app.data.infra.models.ResponseBody
 import retrofit2.http.GET

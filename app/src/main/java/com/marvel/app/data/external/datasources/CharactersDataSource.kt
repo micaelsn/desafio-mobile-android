@@ -1,6 +1,6 @@
 package com.marvel.app.data.external.datasources
 
-import com.marvel.app.data.external.api_retrofit.Requests
+import com.marvel.app.data.external.requests.Requests
 import com.marvel.app.data.infra.datasources.ICharactersDataSource
 import com.marvel.app.data.infra.models.CharacterModel
 import retrofit2.Retrofit
