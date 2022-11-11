@@ -17,7 +17,7 @@
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
-        android:name="com.marvel.app.presentation.presenters.CarouselListView"
+        android:name="com.marvel.app.presentation.presenters.CharactersListView"
         android:label="@string/second_fragment_label"
         tools:layout="@layout/fragment_listview">
 

@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.marvel.app.R
 import com.marvel.app.databinding.FragmentCarouselBinding
+import com.marvel.app.presentation.controllers.MainActivityController
 
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.
@@ -15,6 +16,7 @@ import com.marvel.app.databinding.FragmentCarouselBinding
 class CharactersCarousel : Fragment() {
 
     private var _binding: FragmentCarouselBinding? = null
+    private val controller = MainActivityController()
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -24,7 +26,7 @@ class CharactersCarousel : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
+        controller.getCarouselCharacters()
         _binding = FragmentCarouselBinding.inflate(inflater, container, false)
         return binding.root
 
@@ -33,13 +35,15 @@ class CharactersCarousel : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.buttonFirst.setOnClickListener {
-            findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
-        }
+
     }
 
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
     }
+}
+
+class FragmentCarouselBinding {
+
 }

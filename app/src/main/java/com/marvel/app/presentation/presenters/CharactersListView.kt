@@ -13,7 +13,7 @@ import com.marvel.app.presentation.controllers.MainActivityController
 /**
  * A simple [Fragment] subclass as the second destination in the navigation.
  */
-class CarouselListView : Fragment() {
+class CharactersListView : Fragment() {
 
     private var _binding: FragmentListviewBinding? = null
     private val controller = MainActivityController()
@@ -34,10 +34,6 @@ class CarouselListView : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-        binding.buttonSecond.setOnClickListener {
-            findNavController().navigate(R.id.action_SecondFragment_to_FirstFragment)
-        }
     }
 
     override fun onDestroyView() {

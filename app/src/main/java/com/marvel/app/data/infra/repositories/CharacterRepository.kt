@@ -4,7 +4,7 @@ import com.marvel.app.data.infra.datasources.ICharactersDataSource
 import com.marvel.app.domain.repositories.ICharactersRepository
 import com.marvel.app.domain.entities.Character
 
-class CharacterRepository(
+class CharactersRepository(
     private val dataSource: ICharactersDataSource
 ) : ICharactersRepository {
 
