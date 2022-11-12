@@ -43,7 +43,3 @@ class CharactersCarousel : Fragment() {
         _binding = null
     }
 }
-
-class FragmentCarouselBinding {
-
-}

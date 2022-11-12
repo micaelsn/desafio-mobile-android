@@ -6,6 +6,21 @@
     android:layout_height="match_parent"
     tools:context=".presentation.presenters.CharactersCarousel">
 
-    <com.jackandphantom.carouselrecyclerview.CarouselRecyclerview
-        />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <com.jackandphantom.carouselrecyclerview.CarouselRecyclerview
+            android:id="@+id/carouselRecyclerview"
+            android:layout_width="0dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="144dp"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
