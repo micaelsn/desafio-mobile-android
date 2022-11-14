@@ -4,12 +4,12 @@ import com.marvel.app.data.infra.datasources.ICharactersDataSource
 import com.marvel.app.domain.repositories.ICharactersRepository
 import com.marvel.app.domain.entities.Character
 
-class CharacterRepository(
+class CharactersRepository(
     private val dataSource: ICharactersDataSource
 ) : ICharactersRepository {
 
-    override suspend fun getCharacters(): List<Character> {
-        val characters = dataSource.getCharacters(5)
+    override suspend fun getCharacters(limit: Int): List<Character> {
+        val characters = dataSource.getCharacters(limit)
         return characters.map{ item-> item.toMap() }
     }
 
