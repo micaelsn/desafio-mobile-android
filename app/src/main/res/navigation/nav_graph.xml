@@ -7,9 +7,9 @@
 
     <fragment
         android:id="@+id/FirstFragment"
-        android:name="com.marvel.app.presentation.presenters.CharactersCarousel"
+        android:name="com.marvel.app.presentation.presenters.Home"
         android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_carousel">
+        tools:layout="@layout/fragment_home">
 
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"

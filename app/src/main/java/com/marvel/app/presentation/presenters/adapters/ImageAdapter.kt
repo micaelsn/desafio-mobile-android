@@ -1,4 +1,4 @@
-package com.marvel.app.presentation.presenters.components
+package com.marvel.app.presentation.presenters.adapters
 
 import android.widget.ImageView
 import com.bumptech.glide.Glide
