@@ -41,7 +41,7 @@ class HomeAdapter(private val homeState: HomeState) :
                     LinearLayoutManager.HORIZONTAL, false
                 )
                 setHasFixedSize(true)
-                adapter = homeState.charactersCarousel?.let { characters -> CharactersAdapter(characters) }
+                adapter = homeState.charactersCarousel.let { characters -> CharactersAdapter(characters) }
             }
         } else {
             holder as ViewHolderList
@@ -51,7 +51,7 @@ class HomeAdapter(private val homeState: HomeState) :
                     LinearLayoutManager.VERTICAL, false
                 )
                 setHasFixedSize(true)
-                adapter = homeState.charactersList?.let { character -> CharactersAdapter(character) }
+                adapter = homeState.charactersList.let { character -> CharactersAdapter(character) }
             }
         }
     }

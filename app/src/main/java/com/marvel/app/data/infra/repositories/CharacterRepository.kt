@@ -8,8 +8,8 @@ class CharactersRepository(
     private val dataSource: ICharactersDataSource
 ) : ICharactersRepository {
 
-    override suspend fun getCharacters(): List<Character> {
-        val characters = dataSource.getCharacters(5)
+    override suspend fun getCharacters(limit: Int): List<Character> {
+        val characters = dataSource.getCharacters(limit)
         return characters.map{ item-> item.toMap() }
     }
 
